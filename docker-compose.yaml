@@ -1,0 +1,8 @@
+jenkins-node-app:
+  restart: always
+  image: jenkins-node-app
+  build: ./jenkins-node-app
+  container_name: jenkins-node-app
+  environment:
+    - VIRTUAL_HOST="0.0.0.0"
+    - VIRTUAL_PORT=3000
